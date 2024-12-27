@@ -1,7 +1,7 @@
 from flask import Flask, jsonify, request, abort
 from flask_cors import CORS
-from .database.models import setup_db, Movie, Actor, database_path
-from .auth.auth import requires_auth
+from database.models import setup_db, Movie, Actor, database_path
+from auth.auth import requires_auth
 
 app = Flask(__name__)
 setup_db(app, database_path)
