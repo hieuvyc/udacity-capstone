@@ -19,6 +19,16 @@ View movie details, including title and release date.
 # Note
 This project includes the postman collection (casting-agency-onrender.postman_collection.json) used to test APIs, permissions, and roles. Authentication is included in the collection.
 
+### Instructions to set up authentication (only use when token is expired)
+- Following README.md in frontend folder to setup the frontend project
+- Get the token
+  - Go to: http://localhost:8100/
+  - Login with username and password to get the token
+    - username: hieuvyc@gmal.com -> Casting Director
+    - username: 4eyegroup@gmail.com -> Casting Assistant
+    - password is given on note submission.
+
+
 # URL location
 https://udacity-capstone-6sdm.onrender.com/
 
