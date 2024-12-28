@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 # Load environment variables from .env file
 load_dotenv()
 
-database_name = os.getenv('DATABASE_NAME')
+database_name = os.getenv('DATABASE_NAME_TEST')
 database_user = os.getenv('DATABASE_USER')
 database_password = os.getenv('DATABASE_PASSWORD')
 database_host = os.getenv('DATABASE_HOST')
