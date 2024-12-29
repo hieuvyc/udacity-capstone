@@ -2,13 +2,17 @@ from functools import wraps
 from flask import request, jsonify, abort
 from jose import jwt
 import json
+from dotenv import load_dotenv
 import os
 from urllib.request import urlopen
 
+# Load environment variables from .env file
+load_dotenv()
+
 # Configuration
-AUTH0_DOMAIN = 'hieuvyc-coffee-shop.au.auth0.com'
-ALGORITHMS = ['RS256']
-API_AUDIENCE = 'https://udacoffee.com'
+AUTH0_DOMAIN = os.getenv('AUTH0_DOMAIN')
+ALGORITHMS = os.getenv('ALGORITHMS')
+API_AUDIENCE = os.getenv('API_AUDIENCE')
 
 class AuthError(Exception):
     def __init__(self, error, status_code):
